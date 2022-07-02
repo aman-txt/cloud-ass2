@@ -17,20 +17,6 @@ app.use((req,res,next) => {
 
 })
 
-async function doPostRequest() {
-    try {
-     
-    let payload = { banner: 'B00888136', ip: 'http://34.218.249.213:5000' };
 
-    let res = await axios.post('http://52.23.207.11:8081/start', payload);
-
-    let data = res.data;
-    console.log(data);   
-    } catch (error) {
-        console.log(error);
-    }
-}
-
-doPostRequest();
 
 module.exports = app;
