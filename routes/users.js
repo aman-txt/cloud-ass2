@@ -9,27 +9,27 @@ const fs = require('fs');
 const { json } = require('express');
 
 const AWS = require('aws-sdk');
-const key = require('./key');
+
 const s3 = new AWS.S3({
-    accessKeyId: key.aws_access_key_id,
-    secretAccessKey: key.aws_secret_access_key
+    accessKeyId: "ASIAVRXSV3UMIUPLM2H4",
+    secretAccessKey: "fSiUPZ/Umou/FKLUdZxH7R5xdwHLEVEGKSkhSO+u"
 });
 
 const { setTimeout } = require('timers/promises');
-router.post('/start',async (req, res) => {
+// router.post('/start',async (req, res) => {
 
-    try {
+//     try {
      
-        let payload = { banner: 'B00888136', ip: 'http://34.218.249.213:5000' };
+//         let payload = { banner: 'B00888136', ip: 'http://34.218.249.213:5000' };
     
-        let res = await axios.post('http://52.23.207.11:8081/start', payload);
+//         let res = await axios.post('http://52.23.207.11:8081/start', payload);
     
-        let data = res.data;
-        console.log(data);   
-        } catch (error) {
-            console.log(error);
-        }
-})
+//         let data = res.data;
+//         console.log(data);   
+//         } catch (error) {
+//             console.log(error);
+//         }
+// })
  router.post('/storedata',async (req, res) => {
 
     try {
