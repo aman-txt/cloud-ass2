@@ -10,10 +10,7 @@ const { json } = require('express');
 
 const AWS = require('aws-sdk');
 const key = require('./keys.js');
-const s3 = new AWS.S3({
-    accessKeyId: key.AWS_ACCESS_KEY,
-    secretAccessKey: key.AWS_SECRET_ACCESS_KEY
-});
+const s3 = new AWS.S3();
 
 const { setTimeout } = require('timers/promises');
 // router.post('/start',async (req, res) => {
@@ -33,8 +30,6 @@ const { setTimeout } = require('timers/promises');
  router.post('/storedata',async (req, res) => {
 
     try {
-        console.log(key.AWS_ACCESS_KEY)
-        console.log(key.AWS_SECRET_ACCESS_KEY)
         await setTimeout(2000, 'result')
         const data = req.body.data;
         const filename = "test.txt";
