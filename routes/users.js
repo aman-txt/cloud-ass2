@@ -9,7 +9,7 @@ const fs = require('fs');
 const { json } = require('express');
 
 const AWS = require('aws-sdk');
-const key = require('./keys.js');
+
 const s3 = new AWS.S3();
 
 const { setTimeout } = require('timers/promises');
