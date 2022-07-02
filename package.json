@@ -1,0 +1,17 @@
+{
+  "name": "assign2",
+  "version": "1.2.3",
+  "description": "!00 marks",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aman",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1167.0",
+    "axios": "^0.27.2",
+    "express": "^4.18.1"
+  }
+}
