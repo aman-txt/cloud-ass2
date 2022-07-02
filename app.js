@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const axios = require('axios');
+
 
 const userRoute = require('./routes/users');
 
